@@ -10,13 +10,19 @@
  * @returns {string} 
  * 
  * example: coinFlip()
- * returns: heads
+ * returns: heads | tails
  * 
  */
 
 function coinFlip() {
+  return (Math.floor(Math.random() * 2) == 0) ? 'heads' : 'tails'; 
+ // return Math.random() ? 0.5 ? ("Heads") : ("Tails")
 
 }
+
+// export {coinFlip}
+
+//console.log(coinFlip())
 
 /** Multiple coin flips
  * 
