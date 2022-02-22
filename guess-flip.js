@@ -1,6 +1,8 @@
 import { flipACoin } from "./modules/coin.mjs";
 
 const arg = process.argv.slice(2)
+let err = ""
+let call = 0;
 
 if (arg[0] == null) {
     error = "Error: no input."
