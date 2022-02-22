@@ -66,7 +66,7 @@
 
 function countFlips(array) {
   var tails, heads;
-  for (let i =0; i<length(array); i++) {
+  for (let i =0; i<array.length; i++) {
     if (array[i].charAt[0] == 't') {
         tails = tails + 1
     } else {
@@ -74,7 +74,7 @@ function countFlips(array) {
     }
   }
 
-  return '{ heads: ${head}, tails: ${tails} }'
+  return { heads: heads, tails: tails }
 }
 
 /** Flip a coin!
@@ -96,7 +96,7 @@ function flipACoin(call) {
   } else {
     outcome = 'lose'
   }
-  return '{ call: ${call}, flip: ${flip}, result: ${outcome} }'
+  return { call: call, flip: flip, result: outcome }
 }
 
 
