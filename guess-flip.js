@@ -7,5 +7,6 @@ const arg = minimist(process.argv.slice(2))
 if (arg == 'heads' || arg == 'tails') {
     console.log(flipACoin(arg.call))
 } else {
-    console.log("Error: no input.\nUsage: node guess-flip --call=[heads|tails]");
+    console.log("Error: no input.")
+    console.log("Usage: node guess-flip --call=[heads|tails]")
 }
